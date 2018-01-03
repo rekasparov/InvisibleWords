@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="InvisibleWords.exe" version="1.0.0.0" publicKeyToken="063e844252a0737e" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Artcore-Illustrations-Artcore-4-Word.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="InvisibleWords" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="InvisibleWords.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="InvisibleWords.exe" size="708128">
+      <assemblyIdentity name="InvisibleWords" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>9nQMMbiKcPiMZKw0EiAd1RX2PATUKkuys8zh6MNms0E=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="653824">
+      <assemblyIdentity name="Newtonsoft.Json" version="10.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>lz/XDOSOWsQzoQG0KHFoDFHi/roq7sPUAN6kEVrzong=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Artcore-Illustrations-Artcore-4-Word.ico" size="228876">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oEIARmnCJqCmPRnFF2FC0KXX/4e4A98n3cJVxwjh++s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="InvisibleWords.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-TR5R1FJ\M.Burak Kayabal" issuerKeyHash="21cfa63b49cfb914a5937dabe7ad3f7291c244df" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>w6mFN3QQuSX+JcY3E3naELvHZeL8Hlw0iMSmFvQXfDY=</DigestValue></Reference></SignedInfo><SignatureValue>PO9EYiSoblZyuiHeAmOLLkX6NZDfrqKWz8oXmjSOcgMzh50e+FLdvgDdLMxJgXd7WLU/8Y/VaLBHcyrKuY/VemkiRU+g4BfNJs3XTjX4CFQUXcr1S+jq9YOgP6spLzGr2pAqqu8ho7XVTJbjLyBulei98sQ443OYuofzf0rMpc8=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>y2J0EzRfJDGpEccMoANipt25XrTH2xaxj/6znTG9XvIqDnmt0buSwAWyV3OXwZiuqq2fWrBGRNjEwZ1lK+SyhAeDmgcf8Tgm07f282ghKZqRGZK++DwQ6e8IACNiPJHsufwA7jTGMXWrs++gMDXPraqm+FJzOhXUxJTtQFs1KUE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="367c17f416a6c488345c1efce265c7bb10da791337c625fe25b910743785a9c3" Description="" Url=""><as:assemblyIdentity name="InvisibleWords.exe" version="1.0.0.0" publicKeyToken="063e844252a0737e" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-TR5R1FJ\M.Burak Kayabal</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>n4OP83Mgln1tMezjymbu/DG7JZzF6V0E/MIc42tUmJk=</DigestValue></Reference></SignedInfo><SignatureValue>nLEKqJjFzA11o8j1n5EQUSXZ6uZs8naF2XawFskcZhuSO/nDZZCM9ZLoDAXVl11lGoG89+sTvdsiuxcT4UBB9XFxjD6bRKabHcybGzPKCWs5B+7dtU7cnAxC5gESlJmHH4JkQrjLazt/zhOVLeMFk6OXeS8Z6vE2Y/qVtxkkwwo=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>y2J0EzRfJDGpEccMoANipt25XrTH2xaxj/6znTG9XvIqDnmt0buSwAWyV3OXwZiuqq2fWrBGRNjEwZ1lK+SyhAeDmgcf8Tgm07f282ghKZqRGZK++DwQ6e8IACNiPJHsufwA7jTGMXWrs++gMDXPraqm+FJzOhXUxJTtQFs1KUE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICFTCCAX6gAwIBAgIQOJ+kUU98NIdMBnaZPrASxDANBgkqhkiG9w0BAQsFADBJMUcwRQYDVQQDHj4ARABFAFMASwBUAE8AUAAtAFQAUgA1AFIAMQBGAEoAXABNAC4AQgB1AHIAYQBrACAASwBhAHkAYQBiAGEAbDAeFw0xODAxMDExMTI3MDlaFw0xOTAxMDExNzI3MDlaMEkxRzBFBgNVBAMePgBEAEUAUwBLAFQATwBQAC0AVABSADUAUgAxAEYASgBcAE0ALgBCAHUAcgBhAGsAIABLAGEAeQBhAGIAYQBsMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDLYnQTNF8kMakRxwygA2Km3bletMfbFrGP/rOdMb1e8ioOea3Ru5LABbJXc5fBmK6qrZ9asEZE2MTBnWUr5LKEB4OaBx/xOCbTt/bzaCEpmpEZkr74PBDp7wgAI2I8key5/ADuNMYxdauz76AwNc+tqqb4UnM6FdTElO1AWzUpQQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAElPqk0FObpHqRihqk4BIIpDCCa1Xra9tW6RWt1Po7lCrCy0dPxcXCmBVeADubqv6Irzhm6uVwQTjHPvJ8AF+ZJFv5NNRuoml8JuN94OPdlp+eB8fShKKEyK/vLF+a6kh/dtCpudGZZqz8Ek9lqyXmzymUwIFttA5QXaPNNQGbe7</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

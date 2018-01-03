@@ -1,0 +1,12 @@
+C:\Users\M.Burak Kayabal\source\repos\InvisibleWords\InvisibleWords\bin\Debug\InvisibleWords.exe.config
+C:\Users\M.Burak Kayabal\source\repos\InvisibleWords\InvisibleWords\bin\Debug\InvisibleWords.exe
+C:\Users\M.Burak Kayabal\source\repos\InvisibleWords\InvisibleWords\bin\Debug\InvisibleWords.pdb
+C:\Users\M.Burak Kayabal\source\repos\InvisibleWords\InvisibleWords\bin\Debug\Newtonsoft.Json.dll
+C:\Users\M.Burak Kayabal\source\repos\InvisibleWords\InvisibleWords\bin\Debug\Newtonsoft.Json.xml
+C:\Users\M.Burak Kayabal\source\repos\InvisibleWords\InvisibleWords\obj\Debug\InvisibleWords.Properties.Resources.resources
+C:\Users\M.Burak Kayabal\source\repos\InvisibleWords\InvisibleWords\obj\Debug\InvisibleWords.csproj.GenerateResource.Cache
+C:\Users\M.Burak Kayabal\source\repos\InvisibleWords\InvisibleWords\obj\Debug\InvisibleWords.csproj.CoreCompileInputs.cache
+C:\Users\M.Burak Kayabal\source\repos\InvisibleWords\InvisibleWords\obj\Debug\InvisibleWords.exe
+C:\Users\M.Burak Kayabal\source\repos\InvisibleWords\InvisibleWords\obj\Debug\InvisibleWords.pdb
+C:\Users\M.Burak Kayabal\source\repos\InvisibleWords\InvisibleWords\obj\Debug\InvisibleWords.frmSettings.resources
+C:\Users\M.Burak Kayabal\source\repos\InvisibleWords\InvisibleWords\obj\Debug\InvisibleWords.frmMain.resources
