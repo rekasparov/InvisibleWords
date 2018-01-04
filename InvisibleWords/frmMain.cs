@@ -23,6 +23,8 @@ namespace InvisibleWords
         private int sleepTime { get; set; }
 
         private bool _isStop;
+        public string KeyText { get; set; }
+        public string ValueText { get; set; }
 
         private bool isStop
         {
@@ -113,8 +115,8 @@ namespace InvisibleWords
                 {
                     data = Program.wordList[random.Next(0, Program.wordList.Count)];
 
-                    lblKey.Text = data.Key;
-                    lblValue.Text = data.Value;
+                    KeyText = data.Key;
+                    ValueText = data.Value;
                 }
 
                 panel.Visible = true;
@@ -151,6 +153,27 @@ namespace InvisibleWords
             {
                 isStop = true;
             }
+        }
+
+        private void panel_Paint(object sender, PaintEventArgs e)
+        {
+            var panel = (Panel)sender;
+            var font = new Font(new FontFamily("Segoe UI"), 22, FontStyle.Bold);
+            var keySize = e.Graphics.MeasureString(KeyText, font);
+            var valueSize = e.Graphics.MeasureString(ValueText, font);
+
+            e.Graphics.DrawString(ValueText, font, new SolidBrush(Color.White), new PointF(panel.Width-valueSize.Width+ 2, panel.Height - valueSize.Height+ 2));
+            e.Graphics.DrawString(ValueText, font, new SolidBrush(Color.LightGray), new PointF(panel.Width - valueSize.Width + 1, panel.Height - valueSize.Height + 1));
+            e.Graphics.DrawString(ValueText, font, new SolidBrush(Color.Red), new PointF(panel.Width - valueSize.Width + 0, panel.Height - valueSize.Height + 0));
+
+
+            e.Graphics.DrawString(KeyText, font, new SolidBrush(Color.White), new PointF(panel.Width - keySize.Width + 2, panel.Height - keySize.Height - valueSize.Height-10 +  2));
+            e.Graphics.DrawString(KeyText, font, new SolidBrush(Color.LightGray), new PointF(panel.Width - keySize.Width + 1, panel.Height - keySize.Height -valueSize.Height-10  + 1));
+            e.Graphics.DrawString(KeyText, font, new SolidBrush(Color.Red), new PointF(panel.Width - keySize.Width + 0, panel.Height - keySize.Height -valueSize.Height -10+ 0));
+
+            
+            //Console.WriteLine($"Height: {size.Height} - Width:{size.Width}");
+
         }
     }
 }
