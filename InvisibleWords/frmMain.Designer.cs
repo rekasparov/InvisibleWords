@@ -39,10 +39,7 @@
             this.timerSleepTime = new System.Windows.Forms.Timer(this.components);
             this.timerShowTime = new System.Windows.Forms.Timer(this.components);
             this.panel = new System.Windows.Forms.Panel();
-            this.lblValue = new System.Windows.Forms.Label();
-            this.lblKey = new System.Windows.Forms.Label();
             this.contextMenuStrip.SuspendLayout();
-            this.panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // notifyIcon
@@ -100,33 +97,12 @@
             // panel
             // 
             this.panel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.panel.Controls.Add(this.lblValue);
-            this.panel.Controls.Add(this.lblKey);
+            this.panel.BackColor = System.Drawing.Color.Lime;
             this.panel.Location = new System.Drawing.Point(127, 111);
             this.panel.Name = "panel";
             this.panel.Size = new System.Drawing.Size(300, 120);
             this.panel.TabIndex = 1;
-            // 
-            // lblValue
-            // 
-            this.lblValue.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lblValue.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblValue.Location = new System.Drawing.Point(0, 60);
-            this.lblValue.Name = "lblValue";
-            this.lblValue.Size = new System.Drawing.Size(300, 60);
-            this.lblValue.TabIndex = 1;
-            this.lblValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblKey
-            // 
-            this.lblKey.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblKey.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblKey.Location = new System.Drawing.Point(0, 0);
-            this.lblKey.Name = "lblKey";
-            this.lblKey.Size = new System.Drawing.Size(300, 60);
-            this.lblKey.TabIndex = 0;
-            this.lblKey.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Paint);
             // 
             // frmMain
             // 
@@ -144,7 +120,6 @@
             this.TransparencyKey = System.Drawing.Color.Lime;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.contextMenuStrip.ResumeLayout(false);
-            this.panel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -160,7 +135,5 @@
         private System.Windows.Forms.Timer timerSleepTime;
         private System.Windows.Forms.Timer timerShowTime;
         private System.Windows.Forms.Panel panel;
-        private System.Windows.Forms.Label lblValue;
-        private System.Windows.Forms.Label lblKey;
     }
 }
